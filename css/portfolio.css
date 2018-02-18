@@ -1,0 +1,29 @@
+/*<header>
+	<title>Trenton Turner</title>
+	<link rel="stylsheet" type = "text/css"
+	href="css/prtfolio.css">
+</header>*/
+body{
+	background-color: #252B30;
+}
+html, body{
+	font-family: avenir next;
+	text-align: left;
+}
+
+header{
+	position: absolute;
+	top:0px;
+	background-color: #252B30;
+	padding: 0px 10px 10px 10px;
+}
+
+h1{
+	position: relative;
+	top:-20px;
+	font-weight: normal;
+	font-size: 60px;
+	color: white;
+}
+
+
