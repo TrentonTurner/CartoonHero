@@ -5,8 +5,12 @@
 </header>*/
 body{
 	background-color: #252B30;
+	margin: 0;
+    padding: 0;
+    width: 100%; /* full window width */
+    text-align: center;
 }
-html, body{
+html, body,head{
 	font-family: avenir next;
 	text-align: left;
 }
@@ -14,16 +18,27 @@ html, body{
 header{
 	position: absolute;
 	top:0px;
-	background-color: #252B30;
-	padding: 0px 10px 10px 10px;
+	background-color: orange;
+	padding: 0px 0px 0px 10px;
 }
 
 h1{
 	position: relative;
 	top:-20px;
+	left:10px;
 	font-weight: normal;
 	font-size: 60px;
 	color: white;
+}
+
+#wrapper {
+    width: 95%; /* of body width */
+}
+#wrapper>div {
+    display: inline-block;
+    width: 32%; /* of wrapper width */
+    margin: auto;
+    text-align: left;
 }
 
 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type = "text/css"
+href="css/portfolio.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  /* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid none;
+    background-color: none;
+    position: relative;
+    top:-80px;
+    left:0px;
+    right:0px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: #252B30;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.2s;
+    font-size: 17px;
+    color: white;
+    position: relative;
+    top:21px;
+    left:0px;
+    right:0px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #252B30;
+    font-weight: bold;
+    padding: 12px 15px;
+    position: relative;
+    top:17px;
+    left:0px;
+    right:0px;
+    = "openTab(event, 'About')";
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #252B30;
+    font-weight: bold;
+    position: relative;
+    top:17px;
+    left:0px;
+    right:0px;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    background-color: none;
+    border: none;
+    border-top: none;
+}
+</style>
+
+</head>
+
+<body> 
+
+
+<div>
+
+    <h1>Trenton Makes<br>
+    The World Takes 
+    </h1>
+
+</div> 
+
+<div class="tab">
+  <button class="tablinks"  >About</button>
+  <button class="tablinks" onclick="openTab(event, 'Graphic')">Graphic</button>
+  <button class="tablinks" onclick="openTab(event, 'Industrial')">Industrial</button>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>London is the capital city of England.</p>
+</div>
+
+<div id="Graphic" class="tabcontent">
+  <h3>Paris</h3>
+  <p>Paris is the capital of France.</p> 
+</div>
+
+<div id="Industrial" class="tabcontent">
+  <h3>Tokyo</h3>
+  <p>Tokyo is the capital of Japan.</p>
+</div>
+
+<script>
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+     
+</body>
+</html> 
