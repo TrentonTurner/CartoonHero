@@ -7,114 +7,156 @@ href="css/portfolio.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style >
-   .dropbtn {
-    background-color: transparent;
-    color: white;
-    padding: 16px;
-    font-size: 17px;
-    border: none;
-    }
+
 
 /*----About-----*/
-    .dropdown {
+    .dropbtn {
         background-color: transparent;
         position: relative;
-        top: -50px;
-        display: inline-block;
-        width: 60px;
+        /*padding: 16px;*/
+        font-size: 17px;    
+        font-weight: lighter;
+        border: none;
+        color: white;
+        height: 13px;
+        overflow: hidden;
     }
-
+    .dropdown {
+        background-color: green;
+        position: relative;
+        top: -50px;
+        left: 10px;
+        display: inline-block;
+        width: 75px;
+    }
     .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        width: 100%;
+        width: 100vw;
+        height: 100px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
+    .dropdown:hover .dropdown-content {
+        display: block;
+        background-color: none;
 
-    .dropdown-content a {
+    }
+    /*.dropdown-content3 a{
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-    }
-
-    .dropdown-content a:hover {background-color: #ddd}
-
-    .dropdown:hover .dropdown-content {
-        display: block;
-
-        background-color: none;
-    }
-
-    .dropdown:hover .dropbtn:hover{
+    }*/
+    .dropdown:hover .dropbtn{
     background-color: transparent;
+    position: relative;
+    top:-5px;
+    height: 17px;
     } 
+ 
+
 
 
 
 /*----Graphic Tab-----*/
-    .dropdown2 {
+    .dropbtn2 {
         background-color: transparent;
         position: relative;
+        /*padding: 16px;*/
+        font-size: 17px;    
+        font-weight: lighter;
+        border: none;
+        color: white;
+        height: 13px;
+        overflow: hidden;
+    }
+    .dropdown2 {
+        background-color: green;
+        position: relative;
         top: -50px;
+        left: 7px;
         display: inline-block;
-        width: 73px;
+        width: 85px;
     }
     .dropdown-content2 {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 1000px;
+        width: 100vw - 10px;
+        height: 100px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
     .dropdown2:hover .dropdown-content2 {
         display: block;
         background-color: none;
+
     }
-    .dropdown-content2 a {
+    /*.dropdown-content3 a{
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-    }
-
-    .dropdown2:hover .dropbtn:hover {
+    }*/
+    .dropdown2:hover .dropbtn2{
     background-color: transparent;
+    position: relative;
+    top:-5px;
+    height: 17px;
     } 
 
 
+
     /*----Industrial Tab-----*/
-    .dropdown3 {
+    .dropbtn3 {
         background-color: transparent;
         position: relative;
+        /*padding: 16px;*/
+        font-size: 17px;    
+        font-weight: lighter;
+        border: none;
+        color: white;
+        height: 13px;
+        overflow: hidden;
+    }
+    .dropdown3 {
+        background-color: green;
+        position: relative;
         top: -50px;
+        left: 4px;
         display: inline-block;
-        width: 73px;
+        width: 85px;
     }
     .dropdown-content3 {
         display: none;
         position: absolute;
         background-color: #f1f1f1;
-        min-width: 1000px;
+        width: 100vw;
+        height: 100px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
     .dropdown3:hover .dropdown-content3 {
         display: block;
         background-color: none;
+
     }
-    .dropdown-content3 a {
+    /*.dropdown-content3 a{
         color: black;
         padding: 12px 16px;
         text-decoration: none;
         display: block;
-    }
-    .dropdown3:hover .dropbtn:hover {
+    }*/
+    .dropdown3:hover .dropbtn3{
     background-color: transparent;
+    position: relative;
+    top:-5px;
+    height: 17px;
     } 
+
+
 
 </style>
 
@@ -125,40 +167,35 @@ href="css/portfolio.css">
 
 <div>
     <h1>Trenton Makes<br>
-    The World Takes 
+        The World Takes 
     </h1>
 </div> 
 
 <!--About-->
 <div class="dropdown">
-  <button class="dropbtn">About</button>
+    <button class="dropbtn">About</button>  
   <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+
   </div>
 </div>
 
 <!--Graphic-->
 <div class="dropdown2">
-  <button class="dropbtn">Graphic</button>
+  <button class="dropbtn2">Graphic</button>
   <div class="dropdown-content2">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+
   </div>
 </div>
 
 <!--Industrial-->
 <div class="dropdown3">
-  <button class="dropbtn">Industrial</button>
+  <button class="dropbtn3">Industrial</button>
   <div class="dropdown-content3">
-    <a href="#">Link 1</a>
+    <!--<a href="#">Link 1</a>
     <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+    <a href="#">Link 3</a>-->
   </div>
 </div>
-
      
 </body>
 </html> 
