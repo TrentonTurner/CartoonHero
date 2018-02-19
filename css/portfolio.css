@@ -5,7 +5,7 @@
 </header>*/
 body{
 	background-color: #252B30;
-	margin: 0;
+	margin: 10px;
     padding: 0;
     width: 100%; /* full window width */
     text-align: center;
@@ -42,3 +42,65 @@ h1{
 }
 
 
+.dropbtn {
+    background-color: transparent;
+    position: relative;
+    /*padding: 16px;*/
+    font-size: 17px;    
+    font-weight: lighter;
+    border: none;
+    color: white;
+    opacity: .75;
+    height: 13px;
+    overflow: hidden;
+}
+
+.dropdown {
+    background-color: transparent;
+    position: relative;
+    top: -50px;
+    left: 10px;
+    right:10px;
+    display: inline-block;
+   
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    margin: 2vw;
+    width:90vw;
+    
+    height: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+
+
+}
+
+#one {
+	width:95vw;
+}
+
+#two {
+	width:88.5vw;
+}
+
+#three {
+	width:95vw;
+}
+
+.dropdown-content a {
+	padding: 12px 12px;
+}
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #transparent;
+    padding-bottom:20px;
+    top:-10px;
+}
